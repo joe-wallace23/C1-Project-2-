@@ -9,7 +9,7 @@
   "author": "Joseph Wallace",
   "license": "ISC",
   "engines": {
-    "node": "12.18.0"
+    "node": "12.18.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
