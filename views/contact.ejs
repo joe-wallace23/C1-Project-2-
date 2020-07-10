@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+
+
+<div class="contact">
+    <section class="lookat">
+        <div class="container">
+            <div class="title text-center">
+                <h1>Contact the BBC</h1>
+            </div>
+            <div class="sub text-center">
+                <h4>Coronavirus pandemic</h4>
+            </div>
+            <div class="para text-center">
+                <p>
+                    We know that at this time you may have many questions to help keep yourself and those around you safe. BBC News is providing extensive coverage and information about the pandemic and answering common questions (you can get in touch by emailing YourQuestions@bbc.co.uk or using the hashtag #BBCYourQuestions on Twitter). We can't provide personal advice to you through this particular site, but would point to NHS.CO.UK for health information and GOV.UK for the government response. 
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <form class="contact-form" id="form" method="POST" action="mailto:wallacej@students.stmaryshs.com" enctype="text/plain">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="name"   name="name" placeholder="Enter Your First Name..." required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="lastName"   name="lastName" placeholder="Enter Your Last Name..." required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" id="email"   name="email" placeholder="Enter Your email..." required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" id="message" placeholder="Enter Message..." required></textarea>
+                    </div>
+
+                    <button  type="submit" class="bbcbtn" onclick="submit()">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<%- include('partials/footer') %>
