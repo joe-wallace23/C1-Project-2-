@@ -245,8 +245,6 @@ app.get("/submit",function (req,res){
         } if (!user){
           
             res.redirect("/register")
-
-
         }
         req.login(user, function(err){
           if (err){
@@ -295,7 +293,7 @@ app.get("/contact", function(req,res){
 
 
 
-app.listen(process.env.PORT || 3000,function(){
+app.listen(3000,function(){
     console.log("Server has started Successfully");
  });
 
