@@ -244,7 +244,7 @@ app.get("/submit",function (req,res){
           return next(err);
         } if (!user){
 
-          res.redirect("/register")
+          return res.redirect("/register")
         }
         req.login(user, function(err){
           if (err){
