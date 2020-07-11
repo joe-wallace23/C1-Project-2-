@@ -244,13 +244,13 @@ app.get("/submit",function (req,res){
           return next(err);
         } if (!user){
 
-            res.redirect("/register")
+          return res.status(500).json({
+            err: "Could not log in user"
+          });
         }
         req.login(user, function(err){
           if (err){
-            return res.status(500).json({
-              err: "Could not log in user"
-            });
+           
           }
           res.redirect("/secrets")
           // res.status(200).json({
