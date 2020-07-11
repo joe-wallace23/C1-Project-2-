@@ -276,7 +276,7 @@ app.get("/submit",function (req,res){
 
 //end Register user with Username and password
 
-app.get("/home", function(req,res){
+app.get("/", function(req,res){
     res.render("home")
 });
 app.get("/news", function(req,res){
