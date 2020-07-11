@@ -128,7 +128,7 @@ passport.serializeUser(function(user, done){
 passport.use(new GoogleStrategy({
     clientID: '73934209206-i3jn39891fq6l40fvocommr45vqm5mcr.apps.googleusercontent.com',
     clientSecret: 'CJj58WNlrUvJMD0qAwcjOl5d' ,
-    callbackURL: "http://localhost:3000/auth/google/secrets",
+    callbackURL: "https://still-savannah-46521.herokuapp.com/auth/google/secrets",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
   },
   function(accessToken, refreshToken, profile, cb) {
