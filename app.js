@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({
 app.use(session({
     secret:"Our Litte BCC secret",
     resave:false,
-    saveUninitialized:false  
+    saveUninitialized:false
   }));
 //End  Cookies and sessions area
 app.use(passport.initialize());
@@ -62,16 +62,16 @@ const userSchema= new mongoose.Schema({
   // Start Letting Users Submit Secrets
 
   // End Letting Users Submit Secrets
-  
+
   });
 
 
 
-  
 
 
- 
-    
+
+
+
 
 //Cookies and sessions area
 userSchema.plugin(passportLocalMongoose);
@@ -103,7 +103,7 @@ passport.use(User.createStrategy());
 passport.serializeUser(function(user, done){
     done(null,user.id);
   });
-  
+
   passport.deserializeUser(function(id, done){
    User.findById(id, function(err,user){
      done(err, user);
@@ -113,12 +113,12 @@ passport.serializeUser(function(user, done){
   passport.serializeUser(function(user, done){
     done(null,user.id);
   });
-  
+
   //End Level 6-  OAuth 2.0 & How to Implement Sign with Google
 
 
 
-  
+
 
 
 
@@ -126,7 +126,7 @@ passport.serializeUser(function(user, done){
 
   //Start Level 6-  OAuth 2.0 & How to Implement Sign with Google
 passport.use(new GoogleStrategy({
-    clientID: '73934209206-i3jn39891fq6l40fvocommr45vqm5mcr.apps.googleusercontent.com', 
+    clientID: '73934209206-i3jn39891fq6l40fvocommr45vqm5mcr.apps.googleusercontent.com',
     clientSecret: 'CJj58WNlrUvJMD0qAwcjOl5d' ,
     callbackURL: "http://localhost:3000/auth/google/secrets",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
@@ -163,7 +163,7 @@ function(req, res){
 // passport.serializeUser(function(user, done) {
 //     done(null, user);
 //   });
-  
+
 //   passport.deserializeUser(function(user, done) {
 //     done(null, user);
 //   });
@@ -243,7 +243,7 @@ app.get("/submit",function (req,res){
         if (err){
           return next(err);
         } if (!user){
-          
+
             res.redirect("/register")
         }
         req.login(user, function(err){
@@ -269,7 +269,7 @@ app.get("/submit",function (req,res){
 //              passport.authenticate("local");
 //              res.redirect("/secrets");
 //          }
-        
+
 //      });
   // });
 
@@ -294,9 +294,6 @@ app.get("/contact", function(req,res){
 
 
 
-app.listen(3000,function(){
-    console.log("Server has started Successfully")
-  });
-
-
-
+app.listen(process.env.PORT || 3000,function(){
+  console.log("Server has started Successfully")
+});
