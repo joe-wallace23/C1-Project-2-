@@ -214,7 +214,7 @@ app.post("/register", function(req,res){
 
 app.get("/logout",function(req,res){
     req.logout();
-    res.redirect("/home")
+    res.redirect("/")
 });
 
 
