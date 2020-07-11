@@ -244,9 +244,7 @@ app.get("/submit",function (req,res){
           return next(err);
         } if (!user){
 
-          return res.status(500).json({
-            err: "Could not log in user"
-          });
+          res.redirect("/register")
         }
         req.login(user, function(err){
           if (err){
@@ -273,6 +271,10 @@ app.get("/submit",function (req,res){
 //      });
   // });
 
+
+  // return res.status(500).json({
+  //   err: "Could not log in user"
+  // });
 
 //end Register user with Username and password
 
