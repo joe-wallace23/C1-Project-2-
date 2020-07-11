@@ -126,8 +126,8 @@ passport.serializeUser(function(user, done){
 
   //Start Level 6-  OAuth 2.0 & How to Implement Sign with Google
 passport.use(new GoogleStrategy({
-    clientID: '451386335067-lr5qumq1nbqthk6t8qt7m5eoc4blvvp7.apps.googleusercontent.com',
-    clientSecret: 'v0a9l152OYYcKYWnG2eq2ZJM' ,
+    clientID: '160107100414-i9safudc1ikhabngh79k3r43tapdl4sv.apps.googleusercontent.com',
+    clientSecret: '566k3hbFKNrD8vBtQ2Y4wiJA' ,
     callbackURL: "https://still-savannah-46521.herokuapp.com/auth/google/secrets",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
   },
