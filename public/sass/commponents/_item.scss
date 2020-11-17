@@ -1,0 +1,16 @@
+.item{
+    margin: 6rem 0 3rem 0;
+
+    &__images{
+        margin-bottom: 1rem;
+    }
+    &__images img{
+        width: 100%;
+        height: 18rem;
+    }
+}
+
+
+.item .col-lg-4{
+    margin-bottom: 2rem;
+}

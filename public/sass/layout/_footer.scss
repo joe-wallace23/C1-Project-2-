@@ -1,0 +1,67 @@
+.bottom{
+    position: relative;
+    margin: 2rem 0 0 0;
+
+    &__content h3{
+        font-size: 1.1rem;
+        color: #000;
+        text-transform: uppercase;
+        padding-bottom: .5rem;
+    }
+    &__highlight{
+        width: 2rem;
+        height: .4rem;
+        background-color: $color-main;
+    }
+    &__list{
+        list-style: none;
+        margin-top: 1.2rem;
+    }
+    &__item:not(:last-child){
+      margin-bottom: .3rem;
+    }
+    &__link{
+        font-size: 1rem;
+        color: #000;
+        &:hover{
+            color: $color-main;
+            text-decoration: none;
+        }
+    }
+    &__icon{
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: $color-main;
+    }
+    &__items{
+       display: inline-block;
+    }
+    &__items:not(:last-child){
+        margin-right: 1rem;
+     }
+     &__images img{
+         width: 100%;
+         height: 10rem;
+
+         @include respond(tab-land){
+            height: 15rem;
+         }
+     }
+     &__copy{
+         font-size: 1rem;
+         color: #000;
+         padding-top: 7rem;
+     }
+}
+
+.bottom .col-lg-3{
+    margin-bottom: .1rem;
+
+    @include respond(tab-you){
+        margin-bottom: 2rem;
+    }
+}
+
+.bottom .col-lg-2{
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif; }
+  @media (max-width: 75em) {
+    body {
+      font-size: 56.25%; } }
+  @media (max-width: 50em) {
+    body {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    body {
+      font-size: 50%; } }
+  @media (max-width: 61.875em) {
+    body {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    body {
+      font-size: 75%; } }
+
+::selection {
+  color: #fff;
+  background-color: #1a5276; }
+
+.nav__button {
+  position: absolute;
+  right: 2rem; }
+
+.nav__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fd8c04bd; }
+
+.topsd__button {
+  margin-top: 2rem; }
+
+.topsd__link {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #fd8c04bd;
+  padding: .7rem 1.2rem; }
+  .topsd__link:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.topsd__space {
+  margin-right: 1rem; }
+
+.topsd__content h1 {
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: .1px;
+  padding-bottom: .5rem; }
+
+.topsd__content p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.8rem; }
+
+.features__content h3 {
+  font-size: 1.3rem;
+  color: #000; }
+
+.features__content p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6rem; }
+
+.features__content p span {
+  color: #fd8c04bd; }
+
+.item__content h2 {
+  font-size: 1.5rem;
+  color: #000;
+  padding-bottom: .8rem; }
+
+.item__content p {
+  font-size: .9rem;
+  color: #000;
+  line-height: 1.5rem; }
+
+.features {
+  margin: 5rem 0 3rem 0; }
+  .features__iconB {
+    margin-bottom: 1rem; }
+  .features__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: #fd8c04bd; }
+
+.features .col-lg-4 {
+  margin-bottom: 2rem; }
+
+.phone {
+  margin: 1rem 0 3rem 0;
+  background-image: url(/images/hello-i-m-nik-F-u45v3k5ik-unsplash-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 28rem; }
+
+.item {
+  margin: 6rem 0 3rem 0; }
+  .item__images {
+    margin-bottom: 1rem; }
+  .item__images img {
+    width: 100%;
+    height: 18rem; }
+
+.item .col-lg-4 {
+  margin-bottom: 2rem; }
+
+.bottom {
+  position: relative;
+  margin: 2rem 0 0 0; }
+  .bottom__content h3 {
+    font-size: 1.1rem;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: .5rem; }
+  .bottom__highlight {
+    width: 2rem;
+    height: .4rem;
+    background-color: #fd8c04bd; }
+  .bottom__list {
+    list-style: none;
+    margin-top: 1.2rem; }
+  .bottom__item:not(:last-child) {
+    margin-bottom: .3rem; }
+  .bottom__link {
+    font-size: 1rem;
+    color: #000; }
+    .bottom__link:hover {
+      color: #fd8c04bd;
+      text-decoration: none; }
+  .bottom__icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: #fd8c04bd; }
+  .bottom__items {
+    display: inline-block; }
+  .bottom__items:not(:last-child) {
+    margin-right: 1rem; }
+  .bottom__images img {
+    width: 100%;
+    height: 10rem; }
+    @media (max-width: 75em) {
+      .bottom__images img {
+        height: 15rem; } }
+  .bottom__copy {
+    font-size: 1rem;
+    color: #000;
+    padding-top: 7rem; }
+
+.bottom .col-lg-3 {
+  margin-bottom: .1rem; }
+  @media (max-width: 61.875em) {
+    .bottom .col-lg-3 {
+      margin-bottom: 2rem; } }
+
+.bottom .col-lg-2 {
+  margin-bottom: 2rem; }
+
+.topsd {
+  margin: 11rem 0 2rem 0;
+  padding-top: 8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.47)), url(/images/josh-appel-mH80vctfTjQ-unsplash-min.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem; }
+
+.navbar {
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: -2px 4px 11px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 4px 11px 3px rgba(0, 0, 0, 0.19);
+  padding: .1rem 1rem .2rem 1rem !important; }
+  .navbar-brand img {
+    width: 8rem;
+    border-radius: .5rem; }
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #000 !important;
+  letter-spacing: .2rem; }
+
+.nav__now {
+  border-bottom: 0.2rem solid #fd8c04bd;
+  display: inline-block; }
+
+.navba .form-control {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 0.2rem solid #fd8c04bd;
+  width: 100% !important; }
+
+.navba .form-control[type="text"] {
+  font-size: 1.2rem;
+  color: #fd8c04bd;
+  outline: 0;
+  box-shadow: none !important; }
+
+.navba ::placeholder {
+  color: #fd8c04bd !important; }
+
+.navbar-toggler {
+  border: none !important; }
+
+.toggler-btn {
+  border: 2px solid #fd8c04bd;
+  padding: 5px;
+  transition: all 2s ease; }
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #fd8c04bd;
+  transition: all 0.5s ease; }
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px); }

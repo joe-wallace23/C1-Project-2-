@@ -1,0 +1,16 @@
+.features{
+    margin: 5rem 0 3rem 0;
+
+    &__iconB{
+        margin-bottom: 1rem;
+    }
+    &__icon{
+        width: 7rem;
+        height: 7rem;
+        fill: $color-main;
+    }
+}
+
+.features .col-lg-4{
+    margin-bottom: 2rem;
+}

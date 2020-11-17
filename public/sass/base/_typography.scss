@@ -1,0 +1,41 @@
+.topsd{
+    &__content h1{
+        font-size: 3rem;
+        color: #fff;
+        letter-spacing: .1px;
+        padding-bottom: .5rem;
+    }
+    &__content p{
+        font-size: 1rem;
+        color: #fff;
+        line-height: 1.8rem;
+    }
+}
+
+.features{
+    &__content h3{
+        font-size: 1.3rem;
+        color: #000;
+    }
+    &__content p{
+        font-size: 1rem;
+        color: #000;
+        line-height: 1.6rem;
+    }
+    &__content p span{
+        color: $color-main;
+    }
+}
+
+.item{
+    &__content h2{
+        font-size: 1.5rem;
+        color: #000;
+        padding-bottom: .8rem;
+    }
+    &__content p{
+        font-size: .9rem;
+        color: #000;
+        line-height: 1.5rem;
+    }
+}

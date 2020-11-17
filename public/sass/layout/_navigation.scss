@@ -1,0 +1,73 @@
+.navbar{ 
+    //background-image: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.16)), url(/images/last-bg-box-min.jpg);
+    background-color: #fff;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     -webkit-box-shadow: -2px 4px 11px 3px rgba(0,0,0,0.19); 
+     box-shadow: -2px 4px 11px 3px rgba(0,0,0,0.19);
+    // border-bottom: .1rem solid #fd8c04bd;
+     padding: .1rem 1rem .2rem 1rem !important;
+
+    &-brand img{
+        width: 8rem;
+       border-radius: .5rem;
+    }
+
+
+}
+.nav{
+    &-link{
+        font-size: 1.1rem;
+        color: #000 !important; 
+        letter-spacing: .2rem;
+        
+    }
+    &__now{
+        border-bottom: .2rem solid $color-main;
+        display: inline-block;
+    }
+}
+
+.navba .form-control{
+    background-color: transparent;
+    border-style: none;
+    border-bottom: .2rem solid $color-main;
+    width: 100% !important;
+}
+
+.navba .form-control[type="text"]{
+    font-size: 1.2rem;
+    color: $color-main;
+   outline: 0;
+   box-shadow: none !important;
+}
+
+.navba ::placeholder{
+    color: $color-main !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+.toggler-btn{
+    border: 2px solid $color-main;
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: $color-main;
+    transition: all 0.5s ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px, -8px);
+}
